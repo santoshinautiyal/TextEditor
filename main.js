@@ -38,3 +38,41 @@ function f4(e){
     }
 }
 
+function f5(e){
+   textarea.style.textAlign = "left";
+}
+function f6(e){
+    textarea.style.textAlign = "center";
+ }
+ function f7(e){
+    textarea.style.textAlign = "right";
+ }
+
+ function f8(e){
+    if(textarea.style.textTransform == "uppercase"){
+        textarea.style.textTransform = "none";
+        e.classList.remove("active");
+    }
+    else{
+        textarea.style.textTransform = "uppercase";
+        e.classList.add("active");
+    }
+}
+
+function f9(e){
+    textarea.style.fontWeight = "normal";
+    textarea.style.fontAlign = "left";
+    textarea.style.fontStyle = "normal";
+    textarea.style.fontTransform = "capitalize";
+    textarea.value = "";
+}
+
+function f10(e){
+    let value =e.value;
+    textarea.style.color = value;
+
+}
+
+window.addEventListener("load"), ()=>{
+    textarea.value = "";
+}
